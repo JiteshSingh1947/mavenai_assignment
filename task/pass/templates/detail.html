@@ -1,0 +1,13 @@
+
+
+    <div class="profile">
+    	{% for p in dashboard %}
+    	{% if p.img %}
+   <img src='{{ p.img.url }}'class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" /> 
+{% endif %}
+        <h2>{{ p.name }}</h2>
+        <p>{{ p.passportno }}</p>
+        <p>{{ p.email }}</p>
+        
+        {% endfor %}
+    </div>
